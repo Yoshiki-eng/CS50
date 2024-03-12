@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+
+<form action="http://localhost:5000/login" method="POST">
+  <div class="mb-3">
+    <label for="formName" class="form-label">User Name</label>
+    <input type="text" class="form-control" id="formName" name="username">
+  </div>
+    <div class="mb-3">
+      <label for="formEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="formEmail1" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="formPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="formPassword" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+
+{% endblock %}

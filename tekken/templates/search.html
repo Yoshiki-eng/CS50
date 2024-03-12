@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block main %}
+
+<form action="http://localhost:5000/search" method="POST">
+    <div class="mb-3">
+      <label for="frame" class="form-label">Startup Frames</label>
+      <input type="number" class="form-control" id="frame">
+    </div>
+    <select name="character" id="character">
+      <option value="">Please choose a character</option>
+      <option value="jin">Jin Kazama</option>
+      <option value="kazuya">Kazuya Mishima</option>
+      <option value="jun">Jun Kazama</option>
+      <option value="paul">Paul Phoenix</option>
+      <option value="law">Martical Law</option>
+      <option value="king">King</option>
+      <option value="lars">Lars Alexandersson</option>
+      <option value="bryan">Bryan Fury</option>
+  </select>
+    <div class="mb-3">
+        <select name="move-type" id="move-type">
+            <option value="">Please choose a move type</option>
+            <option value="high">High</option>
+            <option value="middle">Middle</option>
+            <option value="low">Low</option>
+        </select>
+      </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+{% endblock %}

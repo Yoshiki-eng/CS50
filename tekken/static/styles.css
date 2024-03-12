@@ -1,0 +1,6 @@
+span li {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin-right: 20px; /* Remove margins */
+    margin-left: 20px; /* Remove margins */
+  }
